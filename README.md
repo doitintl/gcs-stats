@@ -1,3 +1,3 @@
 # gcs-stats
 
-Easily analyze all of your Google Cloud Storage buckets using Pub/Sub, Cloud Functions and BigQuery.
+Installation instructions are at https://blog.doit-intl.com/carefully-calculating-google-cloud-storage-buckets-size-with-cloud-functions-pub-sub-89ac34676629
