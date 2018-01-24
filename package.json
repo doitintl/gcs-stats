@@ -1,0 +1,15 @@
+{
+  "name": "gcs-stats",
+  "version": "1.0.0",
+  "description": "Loads buckets storage logs to BigQuery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DoiT International",
+  "license": "MIT",
+  "dependencies": {
+    "@google-cloud/bigquery": "^0.11.1",
+    "@google-cloud/storage": "^1.5.1"
+  }
+}
