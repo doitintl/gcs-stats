@@ -17,8 +17,8 @@ const usageLogsBucket = storage.bucket(config.usageLogsBucket);
  * @param {object} event.data The Pub/Sub message data.
  * @param {object} event.data.attributes The Pub/Sub message attributes.
  */
-exports.gcsStatsHandler = (event) => {
-  const pubsubMessage = event.data;
+exports.gcsStatsHandler = (data, context) => {
+  const pubsubMessage = data;
   const attributes = pubsubMessage.attributes;
   const objectId = attributes.objectId;
   const prefixedLogRegExp = /^PROJECT_([a-z0-9\-]+)_BUCKET_([a-z0-9\-\_\.]+)_storage_([0-9]{4}_[0-9]{2}_[0-9]{2})_[0-9]{2}_[0-9]{2}_[0-9]{2}_[a-z0-9]+_v0$/;
